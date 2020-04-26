@@ -32,7 +32,7 @@ Visualisation of pickup/destination points in various cities, based on previous 
 Based on Uber visualisation of pickups in New York
 """)
 
-@st.cache()
+@st.cache(persit=True)
 def load_data(nrows):
     cities = {'PermPickup':'perm.csv',
         'PermDestination':'perm_des.csv',
